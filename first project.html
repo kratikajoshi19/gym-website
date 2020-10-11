@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbsoluteFit</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color:white;
+        margin:0px;
+        padding:0px;
+        background:url("img/training-828741_960_720.webp");
+        background-image: image-set(center);
+        }
+        .left{
+            display:inline-block;
+            /*border:2px solid goldenrod;*/
+            position:absolute;
+            left:34px;
+            top:20px;
+
+        }
+        .left img{
+            width: 70px;
+            height: 100px;
+            filter:invert(100%);
+
+        } 
+        .left div{
+            line-height: 30px;
+            font-size: 16px;
+            text-align: center;
+        }   
+        .mid{
+            display:block;
+            width:60%;
+            margin:20px auto;
+            /*border:2px solid red;*/
+
+        }
+        .right{
+            position:absolute;
+            right:30px;
+            top:30px;
+            display:inline-block;
+           /* border:2px solid yellow;*/
+
+        }
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            display:inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color:yellow;
+
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border:  2px solid yellow;
+            border-radius: 10px;
+            font-size:17px ;
+            cursor:pointer;
+            
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            border: 2px solid yellow;
+            margin: 106px 80px;;
+            padding: 75px;
+            width: 40%;
+            border-radius: 40px;
+        }
+        .form-group input{
+            text-align: center;
+            display:block;
+            width:500px;
+            padding:1px;
+            border:2px solid black;
+            margin:11px auto;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+        .container h1{
+            text-align: center;
+            text-decoration: underline;
+
+        }
+        .container button{
+            display:block;
+            width:93%;
+            margin:20px auto;
+        }
+        .active:hover {
+            background-color: grey;
+        
+        }
+</style>
+<body>
+     <header class="header">
+          <!--left box for logo-->
+         <div class="left">
+             <img src="img/yoga-3409526__340.webp" alt=""> 
+             <div>AbsoluteFit</div>   
+    </div>
+    <!--mid box for navbar-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="active">about us</a></li>
+            <li><a href="#" class="active">AbsoluteFit calculator</a></li>
+            <li><a href="#" class="active">contact us</a></li>
+        </ul>
+    </div>
+    <!--right box for button-->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+    </div>
+</header>
+<div class="container">
+   <h1>Join the best gym of jhalawar now</h1>
+   <form action="noaction.php">
+       <div class="form-group">
+           <input type="text" name="" placeholder="Enter your name">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Phone no.">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Email Id">
+    </div>
+    <button class="btn">Submit</button>
+   </form>
+</div>   
+</body>
+</html>
